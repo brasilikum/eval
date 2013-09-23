@@ -138,7 +138,7 @@ class Admin_ProfController extends Zend_Controller_Action
 			     	$mail->setBodyText('Lieber Student,
 
 			   			Klicken Sie auf den nachfolgenden Link um das Modul zu bewerten.
-			     		http://localhost:8888/EvaluationSystem_for_Courses/public/evaluate/evaluate?id='.$answerhash.'')
+			     		http://localhost:8888/eval/public/evaluate/evaluate?id='.$answerhash.'')
     					 ->addTo($address)
     					 ->setSubject('Evaluation des Moduls '.$modulname.'')
   						 ->send();
