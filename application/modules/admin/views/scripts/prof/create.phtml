@@ -6,6 +6,9 @@
 		<?php echo $this->showLogout($this->profName); ?>
 		<div id="content">
 			<h2>Neue Evaluation</h2>
+			<?php echo '<form style="display:inline" action="' .$this->baseUrl() .'/admin/prof/index">
+    				<input type="submit" value="Zurück" display: inline>
+				 </form>'; ?>
 			<div class="form"><?php echo $this->form; ?></div>	
 		</div>	
 	</body>
