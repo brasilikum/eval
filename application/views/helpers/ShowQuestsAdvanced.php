@@ -28,7 +28,7 @@ class Zend_View_Helper_ShowQuestsAdvanced extends Zend_View_Helper_Abstract{
 					$html .= '<div>' .$prof->fullName .'</div>';
 					$html .= '<div id="show"><a href="' .$this->view->baseUrl() . '/admin/secretary/show?id='.$quest->id .'"><button>Antworten anzeigen</button></a></div>';
 					$html .= '<div id="csv"><a href="' .$this->view->baseUrl() . '/admin/secretary/csv?id='.$quest->id .'"><button>Ergebnisse als CSV herunterladen</button></a></div>';
-					$html .= '<div id="delete"><a href="' .$this->view->baseUrl() . '/admin/secretary/delete?id='.$quest->id .'"><button>Umfrage löschen</button></a></div>';
+					$html .= '<div onClick="return confirm(\'Möchten Sie die Eingaben wirklich löschen? \n\nOK = Löschen\nAbbrechen = NICHT Löschen\n\n\')" id="delete"><a href="' .$this->view->baseUrl() . '/admin/secretary/delete?id='.$quest->id .'"><button>Umfrage löschen</button></a></div>';
 					$html .= '</li>';
 				}
 			}
