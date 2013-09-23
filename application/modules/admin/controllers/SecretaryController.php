@@ -75,7 +75,7 @@ class Admin_SecretaryController extends Zend_Controller_Action
 							  					 ->fetchAll($this->answerToQuestionTable->select()
 						     					 ->where('answerhash = ?', $answerToQuestion->answerhash)
 						     					 ->where('questionId = ?', '81'))
-						     					 ->current()->anwernumber;
+						     					 ->current()->answernumber;
 									echo $answerToQuestion->answertext.' ('.$note.')';
 								}else{
 									$note = $this->questionTable

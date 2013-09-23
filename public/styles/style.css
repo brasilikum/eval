@@ -136,7 +136,11 @@ textarea {
 	position: absolute;
 	right: 5%;
 	top: 1%;
-	padding: 3px;
+	padding: 3px 10px;
+	 border-radius: 7px;
+    -moz-border-radius: 7px;
+    box-shadow: 2px 2px 2px;
+    -moz box-shadow: 2px 2px 2px;
 }
 
 .quit{
