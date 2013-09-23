@@ -1,0 +1,178 @@
+/* Zend Form Styling */
+dl.zend dt, dd { min-height: 30px; }
+dl.zend_form dt {
+	clear: left;
+    float: left;
+    text-align: left;
+    width: 350px;
+    margin-top: 30px;
+}
+dl.zend_form dt label.required { font-weight: 600; }
+dl.zend_form dd {
+	float: left;
+	clear: right;
+	padding-left: 5px;
+	margin-top: 30px;
+}
+
+dl.zend_form dd input {
+	margin-right: 10px;
+}
+
+dl.zend_form dd label {
+}
+
+dl.zend_form dd ul.errors {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+dl.zend_form dd ul.errors li {
+	float: left;
+	margin: 0 0.15em;
+	font-size: 12px;
+	color: #666666;
+}
+	
+.clear {
+	clear:both;
+}
+
+body {
+	font-family: sans-serif;
+	margin: 0 auto;
+	width: 800px;
+}
+
+h1 {
+	font-size: 4em;
+	margin: 8px 0;
+}
+
+h2 {
+	font-size: 1.2em;
+	margin: 8px 0;
+}
+
+header {
+	margin-bottom: 30px;
+}
+
+#participantID-element {
+	display: none;
+}
+
+#participantID-label {
+	display: none;
+}
+
+textarea {
+	width: 300px;
+	height: 100px;
+}
+
+
+.wrapper5{
+	position: absolute;
+	top: 5%;
+	left: 2%;
+	background-color: #65C5FC;
+	height: 310px;
+	width: 650px;
+     border-radius: 15px;
+     -moz-border-radius: 15px;
+     box-shadow: 3px 3px 3px;
+    -moz box-shadow: 3px 3px 3px;
+}
+
+
+.wrapper3{
+	position: absolute;
+	top: 10%;
+	left: 1.5%;
+	background-color: #97D7FC;
+	height: 290px;
+	width: 630px;
+     border-radius: 15px;
+     -moz-border-radius: 15px;
+     box-shadow: 3px 3px 3px;
+    -moz box-shadow: 3px 3px 3px;
+}
+
+.login{
+	position: absolute;
+	top: 5%;
+	left: 2.5%;
+	background-color: #D4D4D4;
+	height: 260px;
+	width: 600px;
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    box-shadow: 3px 3px 3px;
+    -moz box-shadow: 3px 3px 3px;
+}
+
+#username-element{
+	position: absolute;
+	left: 30%;
+}
+
+#password-element{
+	position: absolute;
+	left: 30%;
+	top: 40%;
+}
+
+#loginSubmit{
+	position: absolute;
+	left: 42%;
+	top: 70%;
+}
+
+
+#logout{
+	background-color: #97D7FC;
+	position: absolute;
+	right: 5%;
+	top: 1%;
+	padding: 3px;
+}
+
+.quit{
+	position: absolute;
+	right: 10%;
+	top: 1%
+}
+
+.questionnaire{
+	position: absolute;
+	right: 50%;
+	top: 1%;
+}
+
+#quests ul{
+	list-style: none;
+	padding-left: 0;
+}
+
+#quests ul li{
+ clear: both;
+ margin: 20px 0px;
+ padding: 10px;
+ background-color: #97D7FC;
+     border-radius: 15px;
+    -moz-border-radius: 15px;
+}
+
+#quests ul li h3{
+	margin: 0px;
+}
+
+#quests ul li #show{
+	float: left;
+}
+
+#quests ul li #csv{
+	float: left;
+}

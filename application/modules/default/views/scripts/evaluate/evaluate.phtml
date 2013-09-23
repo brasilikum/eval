@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>EvalOs</title>
+</head>
+<body>
+	<?php echo $this->showHeader(); ?>
+	<?php 
+	if($this->formsaved == true){
+		echo "Success saving your Form";
+	}else if($this->form){
+		echo '<section>
+			<div>Veranstaltung: ' .$this->questName .'</div>
+			<div>Professor: ' .$this->profName .'</div>
+			<div>Semester: ' .$this->questSemester .'</div>';
+		echo $this->form;
+		echo '</section>';
+	}else{
+		echo $this->error;
+	}
+	?>
+</body>
+</html> 
+
+

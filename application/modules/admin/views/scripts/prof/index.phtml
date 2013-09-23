@@ -1,0 +1,13 @@
+<html>
+	<head>
+	</head>
+	<body>	
+		<?php echo $this->showHeader(); ?>	
+		<?php echo $this->showLogout($this->profName); ?>
+		<div id="quests">
+			<h2>Ihre Umfragen</h2>
+			<?php echo '<a href="' .$this->baseUrl() .'/admin/prof/create">Neue Umfrage erstellen</a>'; ?>
+			<?php echo $this->showQuests($this->quests); ?>	
+		</div>	
+	</body>
+</html>
