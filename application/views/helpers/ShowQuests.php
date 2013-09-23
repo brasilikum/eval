@@ -13,7 +13,7 @@ class Zend_View_Helper_ShowQuests extends Zend_View_Helper_Abstract{
 				}
 				$html .= '<h3>' .$quest->courseName .'</h3>';
 				$html .= '<div>' .$quest->category .'</div>';
-				$html .= '<div>' .$quest->expirationDate .'</div>';
+				$html .= '<div>' .$this->view->formattedDate($quest->expirationDate) .'</div>';
 				$html .= '</li>';
 			}
 			$html .= '</ul>';

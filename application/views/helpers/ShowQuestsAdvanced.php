@@ -7,14 +7,19 @@ class Zend_View_Helper_ShowQuestsAdvanced extends Zend_View_Helper_Abstract{
 		if($quests != null){
 			$html .= '<ul>';
 			foreach($quests as $quest){
+				if($quest->category == 'VL'){
+					$quest->category = 'Vorlesung';
+				}elseif($quest->category == 'PR'){
+					$quest->category = 'Praktikum';
+				}
 				$prof = $userTable->find($quest->profId)->current();
 				if($quest->expirationDate >= $today){
 					$html .= '<li>';
 					$html .= '<h3>' .$quest->courseName .'</h3>';
 					$html .= '<div>' .$quest->category .'</div>';
-					$html .= '<div>Läuft bis: ' .$quest->expirationDate .'</div>';
-					$html .= '<div id="running"> Ergebnisse können erst nach Abschluss angezeigt werden</div>';
 					$html .= '<div>' .$prof->fullName .'</div>';
+					$html .= '<div>Läuft bis: ' .$this->view->formattedDate($quest->expirationDate) .'</div>';
+					$html .= '<div id="running"> Ergebnisse können erst nach Abschluss angezeigt werden</div>';
 					$html .= '</li>';	
 				}else{
 					$html .= '<li class="expired">';
