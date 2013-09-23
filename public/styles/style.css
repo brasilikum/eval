@@ -74,10 +74,12 @@ textarea {
 
 #success {
 	background-color: #68E86F;
+	padding: 10px;
 }
 
 #error {
 	background-color: #E89476;
+	padding: 10px;
 }
 
 
