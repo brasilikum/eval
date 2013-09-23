@@ -35,13 +35,13 @@ class IndexController extends Zend_Controller_Action
 	    $form = new Zend_Form();
 		$form->setAction('')->setMethod('post');
 		$username = new Zend_Form_Element_Text('username', array( 'required' => true));
-		$username->setValue('Benutzername');
+		$username->setAttrib('placeholder','Benutzername');
 		$password = new Zend_Form_Element_Password('password', array( 'required' => true));
-		$password->setValue('Passwort');
+		$password->setAttrib('placeholder','Passwort');
 		$submit = new Zend_Form_Element_Submit('submit', array('label' => 'Anmelden'));
 		$submit->setAttrib('id', 'loginSubmit');
 		$form->addElements(array($username, $password, $submit));
-		$form->password->renderPassword = 'true' ;
+
 
 		return $form;
 	}
