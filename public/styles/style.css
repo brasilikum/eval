@@ -151,6 +151,7 @@ textarea {
 	top: 1%;
 }
 
+
 #quests ul{
 	list-style: none;
 	padding-left: 0;
@@ -163,6 +164,8 @@ textarea {
  background-color: #97D7FC;
      border-radius: 15px;
     -moz-border-radius: 15px;
+    box-shadow: 2px 2px 2px;
+    -moz box-shadow: 2px 2px 2px;
 }
 
 #quests ul li h3{
