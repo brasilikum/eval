@@ -7,7 +7,7 @@
 	<?php echo $this->showHeader(); ?>
 	<?php 
 	if($this->formsaved == true){
-		echo "Success saving your Form";
+		echo '<div id="success">Danke, deine Antworten wurden anonym gespeichert</div>';
 	}else if($this->form){
 		echo '<section>
 			<div>Veranstaltung: ' .$this->questName .'</div>
@@ -16,8 +16,7 @@
 		echo $this->form;
 		echo '</section>';
 	}else{
-		echo $this->error;
-	}
+		echo '<div id="error">$this->error</div>';
 	?>
 </body>
 </html> 
