@@ -200,7 +200,7 @@ class Admin_SecretaryController extends Zend_Controller_Action
 		$csvColumn[$columnCounter] = $average;
 
 
-		$fp = fopen($questionnaire->courseName.'.csv', 'w');
+		$fp = fopen('../CSV-Ausgaben/'.$questionnaire->courseName.'.csv', 'w');
 
 		//writing the csv-file
 		foreach ($csvColumn as $fields) {
