@@ -72,6 +72,14 @@ textarea {
 	height: 100px;
 }
 
+#success {
+	background-color: #68E86F;
+}
+
+#error {
+	background-color: #E89476;
+}
+
 
 .wrapper5{
 	position: absolute;
