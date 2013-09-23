@@ -29,6 +29,10 @@ class Admin_SecretaryController extends Zend_Controller_Action
 		$quests = $this->questionnaireTable->fetchAll($this->questionnaireTable
 													->select()
 													->order('expirationDate DESC'));
+
+		$userTable = $this->userTable;
+
+		$this->view->userTable = $userTable;
 		$this->view->quests = $quests;
 	}
 
